@@ -27,7 +27,7 @@ pipeline {
 
     stage('Gradle Build') {
       steps {
-          sh 'gradle clean install'
+          sh 'gradle clean build'
           }
       post {
         failure {

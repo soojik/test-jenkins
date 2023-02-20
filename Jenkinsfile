@@ -2,7 +2,7 @@ pipeline {
   agent any
   // any, none, label, node, docker, dockerfile, kubernetes
   tools {
-    maven 'test-gradle'
+    gradle 'test-gradle'
   }
   environment {
     gitName = 'soojik'

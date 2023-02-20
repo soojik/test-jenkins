@@ -13,7 +13,7 @@ pipeline {
   stages {
     stage('Checkout Github') {
       steps {
-          checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: githubCredential, url: 'git@github.com:soojik/test-jenkins.git']]])
+          checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: githubCredential, url: 'https://github.com/soojik/test-jenkins']]])
           }
       post {
         failure {

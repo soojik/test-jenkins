@@ -7,8 +7,8 @@ pipeline {
   environment {
     gitName = 'soojik'
     gitEmail = 'wltn2858@swu.ac.kr'
-    githubCredential = 'github_jenkins'
-    dockerHubRegistry = 'soo/test-jenkins'
+    githubCredential = 'github-jenkins'
+    dockerHubRegistry = 'wltn2858/test-jenkins'
   }
   stages {
     stage('Checkout Github') {

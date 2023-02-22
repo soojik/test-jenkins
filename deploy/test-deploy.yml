@@ -14,4 +14,4 @@ spec:
     spec:
       containers:
         - name: test
-          image: wltn2858/test-jenkins:11
+          image: wltn2858/test-jenkins:latest

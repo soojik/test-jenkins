@@ -7,7 +7,7 @@ pipeline {
   environment {
     gitName = 'soojik'
     gitEmail = 'wltn2858@swu.ac.kr'
-    githubCredential = 'github-jenkins'
+    githubCredential = 'git-jenkins'
     dockerHubRegistry = 'wltn2858/test-jenkins'
     dockerHubRegistryCredential = 'docker-cre'
   }

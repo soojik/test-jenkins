@@ -85,7 +85,7 @@ pipeline {
                   // 이미지 태그 변경 후 메인 브랜치에 푸시
                   sh "git config --global user.email ${gitEmail}"
                   sh "git config --global user.name ${gitName}"
-                  sh "sed -i 's/test-jenkins:.*/test-jenkins:${currentBuild.number}/g' deploy/sb-deploy.yml"
+                  sh "sed -i 's/test-jenkins:.*/test-jenkins:${currentBuild.number}/g' deploy/test-deploy.yml"
                   // deploy폴더의 sd-deploy.yml 파일의 내용을 수정하는 부분.
                   sh "git add ."
                   sh "git commit -m 'fix:${dockerHubRegistry} ${currentBuild.number} image versioning'"
